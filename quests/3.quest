@@ -1,0 +1,150 @@
+quest-id 3
+quest-name A mountain's call
+number-of-event-nodes 41
+number-of-edges 57
+number-of-items 2
+
+0) The yearn for adventure awaits amoung the wilderness.
+1) There are three paths ahead: The Mystical Swamp, The Enchanted Forest, or The Raging River.
+2) You pick The Mystical Swamp!
+3) You set out into the mist as you begin your adventure.
+4) As you wade through the swamp, you come across a hard lump under the water. Intrigued, you investigate.
+5) You disturbed an alligator! 
+6) The alligator catches you, and does severe damage.
+7) You are too quick for the alligator, and escape with minor scratches. 
+8) You find an old shoe.
+9) You discover an ancient relic!
+10) You continue your adventure onwards to the Mountain.
+11) After much strenuous activity, you make it to the base of the Mountain!
+12) You pick The Enchanted Forest!
+13) The Forest is full of beautiful frosted evergreens and firs.
+14) While you walk, you can't help but feel that you are being watched...
+15) Night approaches quicker than you expected, and you fear you will be getting lost soon.
+16) You continue to feel watched, even several hours later. Getting spooked out, you call out to the Forest "Hello? Is anybody here?"
+17) Suddenly there is a heavy stillness in the air, and an unnatural quiet follows.
+18) You quicken your pace, and in the rush you lose the trail.
+19) Several hours later, you are still lost. You are starving.
+20) You finally break through the woods, and into a clearing, with the mountain visible up ahead!
+21) A crisp voice calls out "Greetings, Traveller. Follow the wind and you will be safe."
+22) You disregard this call, and run the path you were originally headed. 
+23) You find the wind getting stronger and stronger, until it is a loud roar in your ears.
+24) You've lost your sense of direction, and can no longer tell which way the mountain is!
+25) As night falls, you make out the flicker of light up ahead.
+26) You decide to stay clear, and camp for the cold night.
+27) You approach the light, and find yourself in an empty campground. You use the supplies left to last the night.
+28) You are ambushed! Thieves steal most of your money, and beat you up as well.
+29) Finally, you stumble out of the forest! 
+30) The path seems to be getting harder and harder to follow...
+31) You get lost in the Forest, end decide to head straight towards where you remember the mountain being.
+32) You hear faint singsong in the background... 
+33) Out of the forest, a humanoid figure appears, and introduces themselves. 
+34) The creatures take care of you, and show you the correct pathway to the mountain!
+35) The next morning, feeling full and joyous, you head out of the forest and towards the mountain.
+36) You pick The Raging River!
+37) You create a makeshift raft, and depart downstream, towards the mountain.
+38) 
+39) 
+40) You arrive at the base of the mountain, battered and bruised, but safe.
+
+0)
+1)
+2)
+3)
+4)
+5)
+6) health -100
+7) health -20
+8) item 4
+9) item 5
+10)
+11) newquest 4
+12)
+13)
+14)
+15)
+16)
+17)
+18)
+19) health -50
+20)
+21)
+22)
+23)
+24)
+25)
+26) health -30
+27)
+28) health -50 money -300
+29)
+30)
+31)
+32)
+33)
+34) health +200
+35)
+36)
+37)
+38) 
+39) health -30
+40) 
+
+0 -> 1 1/1
+1 -> 2 1/3
+1 -> 12 1/3
+1 -> 36 1/3
+2 -> 3 1/1
+3 -> 4 1/1
+4 -> 5 1/3
+5 -> 6 1/5
+5 -> 7 4/5
+7 -> 10 1/1
+4 -> 8 3/4
+8 -> 10 1/1
+4 -> 9 1/4
+9 -> 10 1/1
+10 -> 11 1/1
+12 -> 13 1/1
+13 -> 14 1/1
+14 -> 15 1/2
+14 -> 16 1/2
+15 -> 16 1/2
+15 -> 19 1/2
+16 -> 17 1/2
+17 -> 18 1/1
+18 -> 19 1/2
+19 -> 19 1/2
+19 -> 20 1/2
+16 -> 21 1/2
+21 -> 22 1/2
+21 -> 32 1/2
+16 -> 17 1/2
+17 -> 20 1/2
+20 -> 11 1/2
+22 -> 23 1/1
+23 -> 24 1/1
+24 -> 25 1/1
+25 -> 26 1/2
+26 -> 31 1/1
+31 -> 29 1/1
+29 -> 11 1/1
+25 -> 27 1/2
+27 -> 28 1/2
+28 -> 29 1/1
+27 -> 29 1/2
+32 -> 33 1/1
+33 -> 34 1/1
+34 -> 35 1/1
+35 -> 10 1/1
+36 -> 37 1/1
+37 -> 38 1/2
+37 -> 39 1/2
+38 -> 38 1/3
+38 -> 39 1/3
+38 -> 40 1/3
+39 -> 38 1/3
+39 -> 39 1/3
+39 -> 40 1/3
+40 -> 11 1/1
+
+4 Shoe An old leather shoe
+5 SapphireDragon A beautiful Sapphire Dragon. Sure to fetch a high price.

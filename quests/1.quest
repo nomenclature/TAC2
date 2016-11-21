@@ -1,0 +1,58 @@
+ quest-id 1
+quest-name Waterfowl Adventure
+number-of-event-nodes 14
+number-of-edges 20
+number-of-item 1
+
+0) It is a sunny day!
+1) What a wonderful day to take a walk in Waterfowl Park!
+2) As you are taking a walk through the park you get attacked by mutant ducks!
+3) You escape the mutant ducks by climbing up a tree.
+4) A vicious storm rolls in!
+5) The storm is very powerful, and a stray tree branch falls on you!
+6) You are too slow. The mutant ducks get you!
+7) The ducks are still angry, and continue to take it out on you.
+8) The mutant ducks grow bored, and you escape. 
+9) You slip off the boardwalk, and into the water!
+10) While you are down there, you discover a beautiful gemstone artifact!
+11) While you are down there, you discover nothing but cold and sadness.
+12) You resurface, and head home.
+13) You somehow make it back out of waterfowl park in one peice.
+
+0)
+1)
+2)
+3)
+4)
+5) health -50
+6) health -20
+7) health -20
+8)
+9) health -10
+10) item 7 newquest 2
+11) health -5
+12)
+13)
+
+0 -> 1 1/1
+1 -> 2 3/10
+1 -> 4 7/10
+2 -> 3 1/2
+2 -> 6 1/2
+3 -> 8 1/1
+6 -> 8 1/2
+6 -> 7 1/2
+7 -> 7 1/2
+7 -> 8 1/2
+8 -> 13 1/1
+4 -> 5 3/10
+4 -> 9 7/10
+5 -> 9 1/2
+5 -> 13 1/2
+9 -> 10 7/10
+9 -> 11 3/10
+10 -> 12 1/1
+11 -> 12 1/1
+12 -> 13 1/1
+
+7 TopazDragon A beautiful gemstone dragon artifact!

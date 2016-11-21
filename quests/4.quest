@@ -1,0 +1,237 @@
+quest-id 4
+quest-name White Wolf Mountain
+number-of-event-nodes 66
+number-of-edges 91
+number-of-items 5
+
+0) Atop White Wolf Mountain lies the most technically advanced scientific laboratory in the world.
+1) Up there, you have a chance of finding the cure for Lyme Disease. Only the bravest of the brave scientists are allowed access to this legendary lab.
+2) Immediately in front of you, you see three options. You can take the casual way up, the intermediate way up, or the extreme way up.
+3) You choose the casual way up! This is a fairly long trek with dangerous animals but does not require skill to climb.
+4) You begin your ascent up the mountain.
+5) Hours pass, but nothing but rocks and trees. 
+6) You hear the leaves shuffling...
+7) You stand still and silent. 
+8) The shuffling leaves trail away, and you are again safe.
+9) Your plan did not work!
+10) A large wolf appears before you!
+11) A large bear jumps out of the bush and attacks!
+12) Somehow you intimidate the bear into backing down.
+13) You attempt to intimidate the bear, but it fails miserably. 
+14) You finally manage to escape the beast!
+15) You continue your adventure onwards up the Mountain.
+16) The wolf takes a nasty bite.
+17) The wolf presents you with a beautiful artifact for no apparent reason!
+18) A mysterious stranger appears! He remains silent, but is indeed mysterious.
+19) He hands you a mysterious artifact!
+20) After some time, you break out of the tree line and are on your way closer to the peak.
+21) The wind up here is very strong and cold. You press forward.
+22) Several hours pass.
+23) Snowfall has started, and night is growing near.
+24) The peak is within sight! You must decide to press through or to make camp.
+25) You press through.
+26) As the night falls, you get colder and move more slowly.
+27) You see the laboratory up ahead!
+28) You finally reach the Lab, and are provided with a full meal and a warm bed!
+29) You camp for the night, and your shelter held well. Only minor damage sustained.
+30) Upon the morning, you set out for the lab well-rested.
+31) You can finally begin making your vaccine!
+32) You choose the intermediate way up! This path contains mostly light-moderate rock climbing, with the occasional ferocious mountain goat.
+33) You begin scrambling over rocks in an attempt to reach the peak before nightfall. 
+34) You slip on a rock!
+35) You look back, and see an ominous dark figure chasing after you!
+36) You look back, and get nervous at how high up you really are...
+37) You start run-scrambling as fast as you can up the mountain. 
+38) You slip, but recover.
+39) You run-scramble some more.
+40) The mountain goat gives up the chase. You win this round.
+41) The terrifying mountain goat catches up to you!
+42) You fight off the mountain goat, as it turns out it wasn't actually that dangerous.
+43) You continue your trek up the mountain.
+44) You choose the extreme way up! This is only for the most extreme of human beings. There are no wild animals to encounter, but the path is almost straight up. One slip and you could die.
+45) You begin your ascent of the 10 levels of the mountain.
+46) 1/10 You reach the first level- The Slippery Slope.
+47) 2/10 You reach the second level- Mountain Goat Crossing.
+48) 3/10 You reach the third level- The Slipperier Slope.
+49) 4/10 You reach the fourth level- The Ledge.
+50) 5/10 You reach the fifth level- Treeline Pass. 
+51) 6/10 You reach the sixth level- Cathedral Crescent.
+52) 7/10 You reach the seventh level- Avalanche Falls Tier 1.
+53) 8/10 You reach the eighth level- Avalanche Falls Tier 2
+54) 9/10 You reach the ninth level- The Knife's Edge.
+55) 10/10 You reach the final level- The Summit.
+56) You slip off The Slippery Slope! You fall back to the beginning.
+57) A stray mountain goat knocks you off the path! You fall back a level.
+58) You slip off The Slipperier Slope! You slip back 2 levels!
+59) You fall off The Ledge! Back a level you go.
+60) You stumble and fall backwards off of Treeline Pass down to The Ledge!
+61) You land down at Cathedral Crescent.
+62) You discover an ancient artifact covered in snow and ice!
+63) You fall off of Avalanche Falls, down 2 levels.
+64) You trip on the Knife's Edge!! Oh no. You land at Avalanche Falls...
+65) You discover a beautiful ruby artifact!
+
+0)
+1)
+2)
+3)
+4)
+5)
+6) 
+7) 
+8) 
+9) 
+10)
+11) health -100
+12) item 8
+13)
+14)
+15)
+16) health -50
+17) item 9
+18)
+19) item 10
+20)
+21) health -50
+22)
+23)
+24)
+25)
+26) health -75
+27)
+28) health 500
+29) health -100
+30)
+31) newquest 5
+32)
+33)
+34) health -30
+35)
+36)
+37)
+38) health -30
+39)
+40)
+41)
+42) health -50
+43)
+44)
+45)
+46)
+47)
+48)
+49)
+50)
+51)
+52)
+53)
+54)
+55)
+56) health -50
+57) health -50
+58) health -100
+59) health -50
+60) health -50
+61) 
+62) item 11 
+63) health -100
+64) health -50
+65) item 12
+
+0 -> 1 1/1
+1 -> 2 1/1
+2 -> 3 1/3
+3 -> 4 1/1
+4 -> 5 1/1
+5 -> 5 1/2
+5 -> 6 1/2
+6 -> 18 1/3
+18 -> 19 1/3
+19 -> 15 1/3
+6 -> 5 1/3
+6 -> 7 1/3
+7 -> 8 1/2
+8 -> 5 1/1
+7 -> 9 1/2
+9 -> 10 1/2
+10 -> 17 1/2
+17 -> 15 1/1
+10 -> 16 1/2
+16 -> 14 1/1
+14 -> 15 1/1
+9 -> 11 1/2
+11 -> 12 1/2
+12 -> 14 1/1
+11 -> 13 1/2
+13 -> 14 1/1
+15 -> 20 1/1
+20 -> 21 1/2
+20 -> 23 1/2
+21 -> 22 1/1
+22 -> 21 1/2
+22 -> 23 1/2
+23 -> 24 1/1
+24 -> 25 1/2
+25 -> 26 1/1
+26 -> 25 1/2
+26 -> 27 1/2
+27 -> 28 1/1
+24 -> 29 1/2
+29 -> 30 1/1
+30 -> 28 1/1
+28 -> 31 1/1
+2 -> 32 1/3
+32 -> 33 1/1
+33 -> 34 1/2
+34 -> 34 1/3
+33 -> 35 1/2
+34 -> 35 1/3
+34 -> 36 1/3
+36 -> 43 1/1
+35 -> 37 1/1
+37 -> 38 1/1
+38 -> 39 1/1
+39 -> 38 1/3
+39 -> 40 1/3
+39 -> 41 1/3
+41 -> 42 1/1
+42 -> 43 1/1
+40 -> 43 1/1
+43 -> 20 1/1
+2 -> 44 1/3
+44 -> 45 1/1
+45 -> 46 1/1
+46 -> 56 1/2
+56 -> 45 1/1
+46 -> 47 1/2
+47 -> 57 1/2
+57 -> 46 1/1
+47 -> 48 1/2
+48 -> 58 1/2
+58 -> 46 1/2
+48 -> 49 1/2
+49 -> 59 1/2
+49 -> 50 1/2
+59 -> 48 1/1
+50 -> 60 1/2
+60 -> 59 1/2
+60 -> 49 1/2
+50 -> 51 1/2
+51 -> 52 1/1
+52 -> 53 1/2
+52 -> 62 1/2
+62 -> 53 1/2
+53 -> 54 1/1
+54 -> 55 1/2
+54 -> 64 1/2
+64 -> 68 1/1
+58 -> 61 1/1
+55 -> 65 1/2
+55 -> 27 1/2
+65 -> 27 1/1
+
+8 Honey Some nice sweet honey!
+9 DiamondDragon A beautiful diamond dragon artifact!
+10 GoldDragon A mysterious gilded dragon artifact!
+11 IceDragon A dazzling frosted dragon artifact!
+12 RubyDragon A dazzling ruby dragon artifact!

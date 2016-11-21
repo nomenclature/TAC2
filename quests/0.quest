@@ -1,0 +1,39 @@
+quest-id 0
+quest-name The green dragon inn
+number-of-event-nodes 8
+number-of-edges 10
+number-of-items 4
+
+0) Enter the green dragon inn.
+1) You purchase a pitcher of beer.
+2) The guy sitting behind you is very loud an annoying so you knock him on the head with a bottle of beer and get into a fight
+3) You purchase another pitcher of beer
+4) You flirt with a cute girl and it goes terribly wrong and she accuses you of sexual harrasment.
+5) Bouncer escorts you out.
+6) You leave the bar.
+7) You stumble home drunk. 
+
+0) 
+1) money -16 health 34 item 1
+2) health -10 item 2
+3) money -16 health 34
+4) 
+5) item 6 newquest 2
+6) item 0 
+7) health -5 newquest 1
+
+0 -> 1 1/1
+1 -> 2 1/3
+1 -> 4 1/3
+1 -> 3 1/3
+2 -> 5 1/2
+2 -> 6 1/2
+3 -> 6 1/1
+4 -> 5 1/1
+5 -> 6 1/1
+6 -> 7 1/1
+
+0 Wallet Some drunk guy's wallet
+1 Beer A beer bottle
+2 Newspaper The front page reads "Duck mutations gone wrong"
+6 InnKeys Inn keys stolen from the security guard!

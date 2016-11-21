@@ -1,0 +1,65 @@
+quest-id 2
+quest-name The green dragon inn pt. 2
+number-of-event-nodes 17
+number-of-edges 21
+number-of-items 1
+
+0) Enter the green dragon inn at night using your Inn Keys.
+1) You purchase a pitcher of beer.
+2) You realize that you're the only one here and decide to refund your beer.
+3) You pour yourself another pitcher of beer
+4) You forget why you came here.
+5) You rob the cash registers!
+6) You leave the bar.
+7) You stumble home drunk. 
+8) You forget why you came here.
+9) You leave the bar.
+10) You lift a suspicious-looking rug up from behind the bar, and discover a secret door!
+11) You get scared and decide you can't do this.
+12) You sneak into the basement through the trap door.
+13) You need some more liquid courage. 
+14) You acquire some more liquid courage.
+15) You discover a beautiful Emerald Dragon.
+16) The Green Dragon is now yours!
+
+0) 
+1) money -16 health 34
+2) money 16
+3) health 2
+4) 
+5) money 100
+6) 
+7) health -5 
+8) 
+9) 
+10)
+11)
+12)
+13)
+14) health 2 
+15) newquest 3
+16) item 3
+
+0 -> 1 5/10
+0 -> 8 1/10
+0 -> 5 4/10
+1 -> 2 1/1
+2 -> 10 6/10
+2 -> 5 2/10
+2 -> 3 2/10
+3 -> 4 1/1
+4 -> 6 1/1
+5 -> 6 1/1
+6 -> 7 1/1
+8 -> 9 1/1
+10 -> 11 3/10
+10 -> 12 7/10
+11 -> 13 4/5
+11 -> 6 1/5
+12 -> 15 1/1
+13 -> 14 1/1
+14 -> 12 1/1
+15 -> 16 1/1
+16 -> 7 1/1
+
+3 EmeraldDragon This is BEAUTIFUL!
