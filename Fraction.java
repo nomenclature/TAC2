@@ -1,4 +1,4 @@
-/*
+ /*
  * @author William Fiset, Jonathan Whitaker
  * Tick Attack milestone #3
  * Object Oriented Design - COMP 3721

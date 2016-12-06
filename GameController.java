@@ -12,6 +12,7 @@ public class GameController {
   private IView view, headerView, inputView, announcementView;
   private QuestController questController;
   private InventoryController inventoryController;
+  private BookOfPotions bookOfPotions;
   private int numQuestCompleted = 0;
 
   private static final int TICK_DAMAGE = -175;
@@ -25,6 +26,7 @@ public class GameController {
     player = new Player();
     questController = new QuestController(player);
     inventoryController = new InventoryController(player);
+    bookOfPotions = new BookOfPotions(player);
     view = new View();
     headerView = new HeaderView("MENU: ");
     inputView = new HeaderView("ENTER QUEST ID: ");
@@ -75,9 +77,23 @@ public class GameController {
         headerView.display("You sold all your items for a total value of " + totalValue + "$\n");
       }
 
+    } else if (command.equals("use all")) {
+
+      int totalValue = player.useAllItems();
+      if (totalValue > 0) {
+        headerView.display("You used all your items for a total health boost of " + totalValue + " hp\n");
+      }
+      else
+        headerView.display("Item InnKeys is a quest item and cannot be used or sold\n");
+
+
     } else if (command.equals("items") || command.equals("inventory")) {
 
       inventoryController.invoke();
+
+    } else if (command.equals("potions") || command.equals("book of potions")) {
+
+      bookOfPotions.invoke();
 
     } else if (command.equals("reset") || command.equals("restart")) {
 
@@ -204,6 +220,7 @@ public class GameController {
     headerView.display("'tickcheck'      - perform a tickcheck (Do this after every quest!)\n");
     headerView.display("'quests'         - display and select a quest you wish to do\n");
     headerView.display("'sell all'       - sell all of your items on the black market\n");
+    headerView.display("'use all'        - use all of your items for miscellaneous benefits\n");
 
   }
 

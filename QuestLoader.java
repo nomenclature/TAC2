@@ -154,14 +154,28 @@ class QuestLoader {
         for (int i = 0; i < numItems; i++) {
           String [] line = sc.nextLine().split(" +");
           int itemID = Integer.parseInt(line[0]);
-          String itemName = line[1];
+          int itemValue = Integer.parseInt(line[1]);
+          boolean canBeSold = true;
+          int startOfForLoop = 3;
+
+          
+          if (line[2].equals("nonSellable"))
+         {
+            canBeSold = false;
+            startOfForLoop = 4;
+
+
+         }
+
+          String itemName = line[startOfForLoop-1];
+
           
           StringBuilder sb = new StringBuilder();
-          for(int j = 2; j < line.length; j++)
+          for(int j = startOfForLoop; j < line.length; j++)
             sb.append(line[j] + " "); 
           String itemDescription = sb.toString();
           
-          Item item = new Item(itemID, itemName, itemDescription);
+          Item item = new Item(itemID, itemName, itemDescription, canBeSold, itemValue);
           itemMap.put(itemID, item);
 
         }

@@ -14,14 +14,23 @@ class Item implements Comparable <Item> {
   private String itemName;
   private String description;
   private static Random rand = new Random();
+  private boolean canBeSold = false;
 
-  public Item(int id, String itemName, String description) {
+  public Item(int id, String itemName, String description, boolean canBeSold, int itemValue) {
     if (itemName == null || description == null)
       throw new IllegalArgumentException();
     this.itemId = id;
-    this.itemValue = rand.nextInt(250*(id+1));
+    if(itemValue == 0)
+    {
+      this.itemValue = itemValue;
+    }
+    else
+    {
+    this.itemValue = rand.nextInt(250) + itemValue;
+    }
     this.itemName = itemName;
     this.description = description;
+    this.canBeSold = canBeSold;
   }
 
   public String getDescription() {
@@ -38,6 +47,11 @@ class Item implements Comparable <Item> {
 
   public String getName() {
     return itemName;
+  }
+
+  public boolean canBeSold()
+  {
+    return canBeSold;
   }
 
   @Override public int compareTo(Item other) {
@@ -199,13 +213,46 @@ public class Player {
     return item;
   }
 
-  // Sell all the items the player has
+  // Use a specific item
+  public Item useItem(int itemId)
+  {
+    Item item = inv.getItem(itemId);
+    if(item.getItemValue() > 0)
+    {
+    int itemHealth = item.getItemValue();
+    obtainHealth(itemHealth);
+    removeItem(itemId);
+    }
+     return item;
+  }
+
+  // Use all the items the player has (that are nonSellable)
+  public int useAllItems()
+  {
+    int total = 0;
+    for (Integer itemID : getItems())
+    {
+      Item item = inv.getItem(itemID);
+      if(!item.canBeSold())
+      {
+        useItem(itemID);
+        total += item.getItemValue();
+      }
+    }
+    return total;
+  }
+
+  // Sell all the items the player has (that are sellable)
   public int sellAllItems() {
 
     int total = 0;
     for (Integer itemID : getItems()) {
-      Item item = sellItem(itemID);
-      total += item.getItemValue();
+      Item item = inv.getItem(itemID);
+      if(item.canBeSold())
+      {  
+        sellItem(itemID);
+        total += item.getItemValue();
+      }
     }
     return total;
 
